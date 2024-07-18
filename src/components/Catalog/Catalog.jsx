@@ -79,12 +79,9 @@ export function Catalog() {
   }
   return (
     <>
-      <header className='mx-auto px-5 container py-3'>
         <div className='flex items-center gap-1'>
-          <Input value={search} onChange={(event) => setSearch(event.target.value)} />
-          <SearchIcon />
+          
         </div>
-        <Button variant="outlined" onClick={handleOpen}>Корзина</Button>
         <Modal
           open={open}
           onClose={handleClose}
@@ -114,28 +111,32 @@ export function Catalog() {
             </div>
           </Box>
         </Modal>
-      </header>
+
       <section className='px-5 container mx-auto pt-10'>
         <a href="/" className="mainbtn">На главную</a>
         <Typography variant="h2" component="h2">
           Каталог
         </Typography>
         <div className='mt-4'>
-          <div className='flex items-center justify-between gap-1'>
+          <div className='catalog__items'>
 
-            <div className='flex gap-2'>
+            <div className='catalogfiltrbtns'>
               <Button variant="contained" onClick={() => sort('desc')}>
                 По убыванию
               </Button>
               <Button variant="contained" onClick={() => sort()}>
                 По возрастанию
               </Button>
+              <Input value={search} onChange={(event) => setSearch(event.target.value)} />
+              <SearchIcon />
+              <Button variant="outlined" onClick={handleOpen}>Корзина</Button>
+
             </div>
           </div>
           <div className="catalogcards">
             {tempProducts.map((item) => {
               return (
-                <article className='p-3 rounded-xl bg-white' key={item.id}>
+                <article className="catalog__card" key={item.id}>
                   <h2 className='text-xl font-bold'>{item.name} </h2>
                   <p className='mt-2 text-sm'>{item.description}</p>
                   <p className='mt-8 font-semibold text-[var(--text-color)]'>{item.price} руб.</p>
