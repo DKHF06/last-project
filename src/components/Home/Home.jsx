@@ -67,10 +67,10 @@ export function Home() {
           onMouseLeave={autoplay.current.reset}
         >
           <Carousel.Slide>
-            <img src="./public/banner.png" alt="" srcset="" />
+            <img src="./public/banner.png" alt=""/>
           </Carousel.Slide>
           <Carousel.Slide>
-          <img src="./public/banner.png" alt="" srcset="" />
+            <img src="./public/banner.png" alt="" />
           </Carousel.Slide>
         </Carousel>
       </div>
@@ -159,49 +159,43 @@ export function Home() {
             label="Показать аналоги"
             textColor="white"
           />
-          <Button rightSection={<IconSearch size={14} className="btn12345"/>} fullWidth>Найти</Button>
+          <Button rightSection={<IconSearch size={14} className="btn12345" />} fullWidth>Найти</Button>
         </div>
       </div>
       <div className="catalog">
         <p className="catalogTitle">Каталог</p>
         <div className="catalogCards">
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card1.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card1.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card2.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card2.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card3.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card3.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card4.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card4.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card5.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card5.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card6.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card6.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card7.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card7.png" alt="#" /></a>
           </div>
           <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card8.png" alt="#" /></a>
-          </div>
-          <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card9.png" alt="#" /></a>
-          </div>
-          <div className="catalogCard">
-            <a href="/catalog"><img src="../public/card10.png" alt="#" /></a>
+            <a href="/catalog"><img src="/card8.png" alt="#" /></a>
           </div>
         </div>
       </div>
       <div className="formaccordeon">
-      <div className="form2">
-          <p className="form2title">Трудности с выбором детали?<br/>Звоните или оставьте заявку!</p>
-          <input type="text" placeholder="Введите ваше имя"/>
-          <input type="phone" name="" id="" placeholder="Введите ваш номер"/>
+        <div className="form2">
+          <p className="form2title">Трудности с выбором детали?<br />Звоните или оставьте заявку!</p>
+          <input type="text" placeholder="Введите ваше имя" />
+          <input type="phone" name="" id="" placeholder="Введите ваш номер" />
           <p className="form2text">
             Или позвоните по номеру
           </p>
