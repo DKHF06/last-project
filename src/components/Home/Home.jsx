@@ -67,10 +67,10 @@ export function Home() {
           onMouseLeave={autoplay.current.reset}
         >
           <Carousel.Slide>
-            <img src="./public/banner.png" alt=""/>
+            <img src="/banner.png" alt=""/>
           </Carousel.Slide>
           <Carousel.Slide>
-            <img src="./public/banner.png" alt="" />
+            <img src="/banner.png" alt="" />
           </Carousel.Slide>
         </Carousel>
       </div>
