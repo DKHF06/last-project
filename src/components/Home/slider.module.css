@@ -1,0 +1,15 @@
+.root, .viewport{
+    height: 500px !important;
+    width: 1152px !important;
+
+}
+.slide{
+    height: 500px !important;
+}
+
+.indicators{
+    display: none !important;
+} 
+.control{
+    display: none !important;
+}
